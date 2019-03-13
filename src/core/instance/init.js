@@ -64,7 +64,7 @@ export function initMixin (Vue: Class<Component>) {
       mark(endTag)
       measure(`vue ${vm._name} init`, startTag, endTag)
     }
-
+    // 判断是否传入 el,完成 vue 的挂载;
     if (vm.$options.el) {
       vm.$mount(vm.$options.el)
     }
